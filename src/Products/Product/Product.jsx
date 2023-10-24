@@ -1,5 +1,23 @@
 import './Product.css';
+import { Card } from '../../components';
 
 export default function Product() {
-  return <div>PRODUCTOS</div>;
+  return (
+    <section className="card-container">
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </section>
+  );
 }
