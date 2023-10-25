@@ -1,12 +1,20 @@
-import React from 'react';
-
-export default function Input() {
-  const handleChange = () => {};
-
+export default function Input({
+  handleCategoryChange,
+  value,
+  title,
+  name,
+  color,
+}) {
   return (
     <label className="sidebar-label-container">
-      <input onChange={handleChange} type="radio" name="test2" />
-      <span className="checkmark"></span>All
+      <input
+        onChange={handleCategoryChange}
+        value={value}
+        type="radio"
+        name={name}
+      />
+      <span className="checkmark" style={{ backgroundColor: color }}></span>
+      {title}
     </label>
   );
 }
