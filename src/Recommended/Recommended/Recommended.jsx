@@ -1,7 +1,9 @@
 import { Button } from '../../components';
+import { useFilterContext } from '../../context/FiltersContex';
 import './Recommended.css';
 
-export default function Recommended({ handleButtonsChange }) {
+export default function Recommended() {
+  const { handleButtonsChange } = useFilterContext();
   return (
     <div>
       <h2 className="recommended-title">Recommended</h2>

@@ -2,8 +2,10 @@ import './SideBar.css';
 import { Category } from '../Category';
 import { Price } from '../Price';
 import { Colors } from '../Colors';
+import { useFilterContext } from '../../context/FiltersContex';
 
-export default function SideBar({ handleCategoryChange }) {
+export default function SideBar() {
+  const { handleCategoryChange } = useFilterContext();
   return (
     <section className="sidebar">
       <div className="logo-container">
