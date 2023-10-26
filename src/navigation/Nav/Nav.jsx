@@ -5,6 +5,7 @@ import { useFilterContext } from '../../context/FiltersContex';
 
 function Nav() {
   const { query, handleInputChange } = useFilterContext();
+
   return (
     <nav>
       <div className="nav-container">

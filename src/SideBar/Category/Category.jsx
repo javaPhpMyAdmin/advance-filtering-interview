@@ -1,7 +1,10 @@
 import { Input } from '../../components';
+import { useFilterContext } from '../../context/FiltersContex';
 import './Category.css';
 
-export default function Category({ handleCategoryChange }) {
+export default function Category() {
+  const { handleFiltersByCategory } = useFilterContext();
+  console.log('RENDERING FROM Category');
   return (
     <div>
       <h2 className="sidebar-title">Category</h2>
@@ -11,31 +14,31 @@ export default function Category({ handleCategoryChange }) {
             type="radio"
             value=""
             name="test"
-            onChange={handleCategoryChange}
+            onChange={handleFiltersByCategory}
           />
           <span className="checkmark"></span> All
         </label>
 
         <Input
-          handleCategoryChange={handleCategoryChange}
+          handleCategoryChange={handleFiltersByCategory}
           value="sneakers"
           title="Sneakers"
           name="test"
         />
         <Input
-          handleCategoryChange={handleCategoryChange}
+          handleCategoryChange={handleFiltersByCategory}
           value="flats"
           title="Flats"
           name="test"
         />
         <Input
-          handleCategoryChange={handleCategoryChange}
+          handleCategoryChange={handleFiltersByCategory}
           value="sandals"
           title="Sandals"
           name="test"
         />
         <Input
-          handleCategoryChange={handleCategoryChange}
+          handleCategoryChange={handleFiltersByCategory}
           value="heels"
           title="Heels"
           name="test"

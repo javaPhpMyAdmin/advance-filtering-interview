@@ -1,0 +1,10 @@
+export const FILTER_BY_CATEGORY = 'FILTER_BY_CATEGORY';
+export const FILTER_BY_PRICE = 'FILTER_BY_PRICE';
+export const FILTER_BY_COLOR = 'FILTER_BY_COLOR';
+export const FILTER_BY_COMPANY = 'FILTER_BY_COMPANY';
+export const FILTER_BY_SEARCH = 'FILTER_BY_SEARCH';
+export const CLEAR_FILTER = 'CLEAR_FILTER';
+export const BY_COLOR = 'BY_COLOR';
+export const BY_CATEGORY = 'BY_CATEGORY';
+export const BY_PRICE = 'BY_PRICE';
+export const BY_COMPANY = 'BY_COMPANY';
