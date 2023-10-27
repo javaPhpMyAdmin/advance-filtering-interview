@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-import './Index.css';
+import './index.css';
 import { Product } from './Products';
 import { Recommended } from './Recommended';
 import SideBar from './SideBar/SideBar/SideBar';
